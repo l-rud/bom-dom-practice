@@ -1,4 +1,4 @@
-// Generate a random number between 0 and 100
+// Generate a random number between 0 and 10
 let numberRange = Math.floor(Math.random() * 11);
 const div = document.getElementById("app");
 const h1 = document.createElement("h1");
@@ -10,7 +10,7 @@ playGame.textContent = "Play Game";
 div.appendChild(playGame);
 
 playGame.addEventListener("click", () => {
-  let userGuess = window.prompt("Try to guess the number (0-20)");
+  let userGuess = window.prompt("Try to guess the number (0-10)");
   
   if (userGuess != null) {
     // Create a paragraph to display messages
