@@ -1,0 +1,25 @@
+:root {
+    --purple-light: #E5E0FF;  /* Light Purple */
+    --purple-medium: #A68BC7; /* Medium Purple */
+    --purple-dark: #6F2C91;   /* Dark Purple */
+    --purple-accent: #A07DFF; /* Accent Purple */
+}
+body {
+    background-color: var(--purple-medium);
+    color: var(--purple-dark);
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;         
+    margin: 0;             
+}
+main {
+    width: 80%;            
+    max-width: 800px;     
+    padding: 20px;        
+    text-align: left;   
+    background-color: var(--purple-light);
+    border-radius: 2%;
+    box-shadow: 0 4px 20px 5px var(--purple-accent);
+    font-size: 18px;
+}
