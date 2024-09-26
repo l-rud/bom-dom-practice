@@ -18,11 +18,11 @@ playGame.addEventListener("click", () => {
     div.appendChild(message);
 
     if (userGuess < numberRange) {
-      message.textContent = "Too low! Try another number.";
+      message.textContent = `${userGuess} is too low! Try another number!`;
     } else if (userGuess > numberRange) {
-      message.textContent = "Too high! Try a lower number.";
+      message.textContent = `${userGuess} is too high! Try a lower number!`;
     } else {
-      message.textContent = "Congratulations! You've guessed the number!";
+      message.textContent = `Congratulations! You've guessed the number! It is ${userGuess}!!!🎉🎉🎉`;
     }
   }
 });
