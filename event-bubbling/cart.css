@@ -1,0 +1,12 @@
+#cart {
+    padding: 20px;
+    background-color: lightyellow;
+}
+.category {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: lightblue;
+}
+.product {
+    margin: 5px 0;
+}
