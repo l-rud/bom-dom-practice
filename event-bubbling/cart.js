@@ -14,3 +14,19 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         //event.stopPropagation(); //Stop the event from bubbling
     });
 });
+
+//Create and append the "Delete" button next to each "Add to Cart" button:
+
+const productDivs = document.querySelectorAll('.product'); 
+
+productDivs.forEach(productDiv => {
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.className = 'delete';
+    
+    productDiv.appendChild(deleteButton);
+
+    deleteButton.addEventListener('click', () => {
+        productDiv.remove(); 
+    });
+});
